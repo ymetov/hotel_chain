@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hotel chain</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <script src="https://kit.fontawesome.com/cac6c9d55d.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<!-- JavaScript Bundle with Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex">
+        <div class="logo mr-auto">
+            <h1 class="text-light"><a href="index.html">Black Clover</a></h1>
+
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="seasons.html">Seasons</a></li>
+                <li class="get-started"><a class='signup-btn' href="http://localhost:8080/hotel_system_war/register.html"></a></li>
+                <li class="get-started"><a class='login-btn' href="http://localhost:8080/hotel_system_war/login.html"></a></li>
+                <li><a class='my-profile' href="profile.html"></a></li>
+                <li><a class='logout-btn' href=""></a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </div>
+</header><!-- End Header -->
+
+
+<section id="intro-sec">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/Exterior_Night.jpg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/Lobby_Atrium_Talent.jpg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/tree.jpg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/garde-terace.jpg" class="d-block w-100">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</section>
+
+<main id="main">
+
+    <section id="booking" class="booking section-rg">
+        <div class="container">
+            <div class="booking-form-box">
+                <div class="title">
+                    MAKE A RESERVATION
+                </div>
+
+
+                    <label>Location</label>
+
+                    <select id="room-type" name="hotel-name" type="text" class="custom-select form-control hotel-name" placeholder="Almaty Kazakhstan - Black Clover, Almaty">
+                        <option value="Astana">Astana</option>
+                        <option value="Almaty">Almaty</option>
+                        <option value="Shymkent">Shymkent</option>
+                        <option value="Aqtobe">Aqtobe</option>
+                    </select>
+
+                    <label>Check in</label>
+                    <input name="check-in" class="check-in form-control select-date" type="date">
+
+                    <label>Check out</label>
+                    <input name="check-out" class="check-out form-control select-date" type="date" >
+
+                    <input name="guest-count" class="custom-select guest-count" placeholder="Guest Count:"><br>
+
+                    <button class="rooms-show-btn" type="submit">RESERVE NOW</button>
+
+            </div>
+
+            <div class="available-rooms" style="position: relative; top: 50px; background: #1c1c1c; ">
+                <h2 class="room-count text-white"></h2>
+                <div id="rooms" class="row">
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Black Clover</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Kabanbay 58 ave <br>
+                        Nursultan<br>
+                        Kazakhstan <br>
+                        <strong>Phone:</strong> +77777777<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="icofont-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <form action="" method="post">
+                        <input type="email" name="email" placeholder="Enter your email address for promotion and news"><input type="submit" value="Subscribe">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</footer><!-- End Footer -->
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script>
+
+    function deleteAllCookies() {
+        var cookies = document.cookie.split(";");
+
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        }
+    }
+
+    function displayAvailableRooms(rooms) {
+
+        var title;
+        var price;
+        var description;
+        var image;
+
+        var season_name = rooms[0].season_name;
+        var season_coefficient = rooms[0].season_coefficient;
+
+        console.log(season_name + ' ' + season_coefficient);
+
+        $('.room-count').html('We found ' + rooms.length + ' available room(s) for you');
+
+        $('#rooms').html(""); // make place for new available rooms to be displayed
+
+        for(var i = 0; i < rooms.length; i++) {
+
+            title = rooms[i].title;
+            price = rooms[i].price;
+            description = rooms[i].description;
+            image = rooms[i].image;
+
+
+            var html = `<div class="col-4 py-3">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 250px" src=${image}>
+                                <div class="card-body">
+                                    <h5 class="card-title">${title}</h5>
+                                    ${ season_name ? `<p class="card-text" style="text-decoration: line-through;">Price $${price}/day</p>
+                                                      <p class="card-text">Price $${price * season_coefficient}/day <strong>(${season_name})</strong></p>` : `<p class="card-text">Price $${price}/day</p>`}
+                                    <p class="card-text">${description}</p>
+                                    <button class="btn btn-primary choose-room-btn" type="submit" id="room-${i+1}">Book Now</button>
+                                </div>
+                            </div>
+                        </div>`;
+            $('#rooms').append(html);
+        }
+    }
+
+    $(document).ready(() => {
+
+        if(document.cookie) {
+            var email = document.cookie.split('=')[1];
+
+            if(email) {
+                $('.my-profile').html(email);
+                $('.logout-btn').html('Log Out');
+
+                $('.signup-btn').hide();
+                $('.login-btn').hide();
+
+                $('.logout-btn').on('click', () => {
+                    deleteAllCookies();
+                    location.reload(); // to refresh the current page
+                });
+
+                $('.rooms-show-btn').on('click', () => {
+
+
+                    var hotel_name = $('.hotel-name').val();
+                    var hotel_id;
+                    var check_in = $('.check-in').val();
+                    var check_out = $('.check-out').val();
+
+                    // 4 hotels
+                    switch(hotel_name) {
+                        case 'Astana': hotel_id = 1; break;
+                        case 'Almaty': hotel_id = 2; break;
+                        case 'Shymkent': hotel_id = 3; break;
+                        case 'Aqtobe': hotel_id = 4; break;
+                        default: console.log('error ' + hotel_name);
+                    }
+
+                    //console.log('hotel_id=' + hotel_id);
+                    $.ajax({
+                        url: `available_rooms_servlet?hotel_id=${hotel_id}&check_in=${check_in}&check_out=${check_out}`,
+                        method: 'GET',
+                        success: (r) => {
+
+                            var available_rooms = JSON.parse(r);
+                            displayAvailableRooms(available_rooms);
+
+
+                            $('.choose-room-btn').on('click', (event) => {
+                                //console.log('Event triggered by ' + event.currentTarget.id);
+                                var index = event.currentTarget.id.split('-')[1]; // index of the clicked button. with this index the room_title of chosen room could be derived
+
+                                var room_title = available_rooms[index-1].title;
+                                var check_in = $('.check-in').val();
+                                var check_out = $('.check-out').val();
+                                var guestcount = $('.guest-count').val();
+
+                                $.ajax({
+                                    url: `booking_servlet?hotel_id=${hotel_id}&check_in=${check_in}&check_out=${check_out}&guestcount=${guestcount}&room_title=${room_title}`,
+                                    method: 'POST',
+                                    success: (r) => { alert('Your booking is saved. Check your profile.'); }
+                                });
+                                //console.log(available_rooms[index-1].title);
+                            });
+                        }
+                    });
+                });
+            }
+
+        } else {
+            $('.signup-btn').html('Register');
+            $('.login-btn').html('Login');
+            $('.rooms-show-btn').on('click', () => {
+                alert('You have to log in to view available rooms');
+            });
+        }
+    });
+</script>
+</body>
+
+</html>
